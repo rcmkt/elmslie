@@ -5,6 +5,7 @@ ext.versions = [
         rxJava2      : "2.2.20",
         rxAndroid    : "2.1.1",
         jUnit5       : "5.7.0",
+        freemarker       : "2.3.29",
 ]
 
 ext.deps = [
@@ -21,5 +22,8 @@ ext.deps = [
         ],
         test   : [
                 jUnit5: "org.junit.jupiter:junit-jupiter:$versions.jUnit5",
+        ],
+        plugin : [
+                freemarker: "org.freemarker:freemarker:$versions.freemarker"
         ]
 ]
